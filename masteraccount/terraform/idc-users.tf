@@ -19,7 +19,7 @@
 #   member_id         = aws_identitystore_user.aws_kms_admin_user.user_id
 # }
 
-# Network Admin user onboarding
+## Network Admin user onboarding
 
 resource "aws_identitystore_user" "aws_network_admin_user" {
   identity_store_id = tolist(data.aws_ssoadmin_instances.idc_instance.identity_store_ids)[0]
