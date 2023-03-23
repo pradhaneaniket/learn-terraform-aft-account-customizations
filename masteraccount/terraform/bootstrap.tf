@@ -5,10 +5,4 @@ terraform {
     region         = "eu-central-1"
     # dynamodb_table = "ct-tf-state-lock"
   }
-  required_providers {
-      aws = {
-        source  = "hashicorp/aws"
-        version = "~> 3.0"
-      }
-    }
 }
