@@ -2,7 +2,7 @@
     "include": [
         {
             "type": "ous",
-            "target_value": ["AFT"]
+            "target_value": ["Root"]
           },
           {
           "type": "accounts",
