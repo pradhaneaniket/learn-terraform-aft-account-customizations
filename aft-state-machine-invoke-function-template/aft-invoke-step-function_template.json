@@ -1,0 +1,12 @@
+{
+    "include": [
+        {
+            "type": "ous",
+            "target_value": ["AFT"]
+          },
+          {
+          "type": "accounts",
+          "target_value": ["991369988024"]
+          }
+    ]
+}

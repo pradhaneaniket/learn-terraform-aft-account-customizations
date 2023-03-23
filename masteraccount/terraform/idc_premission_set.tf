@@ -1,4 +1,4 @@
-data "aws_caller_identity" "current" {}
+
 
 resource "aws_ssoadmin_permission_set" "aws_cloud_admin_permission_set" {
   name         = "AWSCloudAdmin"
