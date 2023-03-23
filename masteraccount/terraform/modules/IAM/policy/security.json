@@ -1,0 +1,63 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "FullAccess",
+      "Effect": "Allow",
+	  "Action": [
+		"s3:*",
+		"cloudtrail:*",
+		"guardduty:*",
+		"securityhub:*",
+		"inspector:*"
+	  ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ReadOnly",
+	  "Effect": "Allow",
+      "Action": [
+	  	"iam:Get*",
+        "iam:List*",
+		"apigateway:Get*",
+	  	"lambda:Get*",
+        "lambda:List*",		
+	  	"sns:Get*",
+        "sns:List*",		
+	  	"ses:Get*",
+        "ses:List*",		
+	  	"batch:Describe**",
+        "batch:List*",		
+	  	"ecs:Get*",
+        "ecs:List*",
+		"ecs:Describe*",
+        "eks:List*",
+		"eks:Describe*",
+	  	"ecr:Get*",
+        "ecr:List*",
+		"ecr:Describe*",
+        "elasticache:List*",
+		"elasticache:Describe*",
+		"rds:Describe*",
+        "secretmanager:List*",
+		"secretmanager:Describe*",
+		"kms:Get*",
+        "kms:List*",
+		"acm:Get*",
+		"acm:List*",
+		"acm:Describe*",
+		"ec2:Get*",
+        "ec2:Describe*",
+	  	"cloudformation:Get*",
+        "cloudformation:List*",
+		"cloudformation:Describe*",				
+	  	"cloudwatch:Get*",
+        "cloudwatch:List*",
+		"cloudwatch:Describe*",
+        "appstream:List*",
+		"appstream:Describe*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

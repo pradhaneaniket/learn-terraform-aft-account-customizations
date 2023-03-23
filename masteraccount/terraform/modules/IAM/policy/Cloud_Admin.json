@@ -1,0 +1,35 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "FullAccess",
+            "Effect": "Allow",
+            "Action": [
+                "iam:*",
+                "s3:*",
+                "apigateway:*",
+                "lambda:*",
+                "sns:*",
+                "ses:*",
+                "batch:*",
+                "ecr:*",
+                "ecs:*",
+                "eks:*",
+                "elasticache:*",
+                "rds:*",
+                "secretmanager:*",
+                "kms:*",
+                "acm:*",
+                "ec2:*",
+                "cloudformation:*",
+                "cloudwatch:*",
+                "cloudtrail:*",
+                "guardduty:*",
+                "appstream:*",
+                "inspector:*",
+                "securityhub:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
